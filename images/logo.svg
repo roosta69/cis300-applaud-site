@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-label="Applaud logo">
+  <circle cx="40" cy="48" r="30" fill="#12263a"/>
+  <path d="M40 30c9 0 16 7 16 16 0 6-3 11-8 14 2-4 3-8 3-12 0-7-5-13-11-15 0-2 0-3 0-3z" fill="#7fb3d5"/>
+  <circle cx="34" cy="42" r="3.5" fill="#f7fafc"/>
+  <text x="86" y="62" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-size="52" fill="#1a2b3d">applaud</text>
+</svg>
