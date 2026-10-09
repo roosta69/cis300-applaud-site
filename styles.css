@@ -121,30 +121,24 @@ body {
   color: var(--paper);
 }
 
-.hero-card {
-  background-color: #ffffff;
-  color: var(--ink);
-  border-radius: 12px;
-  padding: 2em;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(18, 38, 58, 0.35);
-}
-
-.stat {
-  font-family: var(--serif);
-  font-size: 3.4rem;
-  color: var(--dark);
+/* Home page video */
+.hero-video {
   margin: 0;
 }
 
-.stat-label {
-  font-weight: 700;
-  margin: 0.2em 0 0 0;
+.hero-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background-color: #000000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
-.stat-sub {
-  color: var(--grey);
-  font-size: 0.9rem;
+.hero-video figcaption {
+  margin-top: 0.75em;
+  color: var(--cream);
+  font-size: 0.95rem;
 }
 
 /* Benefits */
@@ -220,7 +214,7 @@ body {
   margin-top: 1em;
 }
 
-/* Inner page banner (Pricing, Contact) */
+/* Inner page banner (How It Works, Pricing, About, Contact) */
 .page-hero {
   background-color: var(--dark);
   color: var(--paper);
@@ -439,11 +433,108 @@ body {
   color: var(--dark);
 }
 
-/* Tablet and larger: two-column hero and three-up cards */
+/* Figures taken from the Applaud film */
+.shot {
+  margin: 0;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border: 1px solid #d6e2ec;
+  border-radius: 10px;
+}
+
+.shot figcaption {
+  margin-top: 0.6em;
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+
+.wide-shot {
+  margin-top: 1.5em;
+}
+
+.phone-shot {
+  max-width: 260px;
+  margin-top: 1.5em;
+}
+
+/* How It Works walkthrough */
+.walkthrough {
+  list-style-type: none;
+  margin: 2em 0 0 0;
+  padding: 0;
+}
+
+.walk-step {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  align-items: center;
+  padding: 2em 0;
+  border-top: 1px solid #d6e2ec;
+}
+
+.step-label {
+  margin: 0;
+  color: var(--grey);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.walk-text h3 {
+  margin: 0.2em 0 0.4em 0;
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--dark);
+}
+
+/* About page */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  align-items: center;
+}
+
+.founder {
+  max-width: 320px;
+  margin: 0;
+}
+
+.founder img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(18, 38, 58, 0.18);
+}
+
+.founder figcaption {
+  margin-top: 0.75em;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+/* Tablet and larger: two-column layouts and three-up cards */
 @media (min-width: 720px) {
   .hero {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 5fr 4fr;
     padding: 4.5em 3em;
+  }
+
+  .walk-step {
+    grid-template-columns: 2fr 3fr;
+    gap: 3em;
+  }
+
+  .about-layout {
+    grid-template-columns: 3fr 2fr;
   }
 
   .hero-text h1 {
