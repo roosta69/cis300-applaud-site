@@ -23,7 +23,7 @@ Live site: https://roosta69.github.io/cis300-applaud-site/
 - `media/applaud-how-it-works.mp4` — 42 second film (H.264 + AAC, 720p, fast start)
 
 Every page uses the same HTML5 header, nav, main and footer, a unique page
-title, and description and keywords meta tags. All five pages pass the W3C
+title, description and keywords meta tags, and the Google Analytics 4 tag. All five pages pass the W3C
 Nu HTML Checker and the stylesheet passes the W3C CSS Validator.
 
 Built by hand in a text editor (no templates or site builders), per the course
